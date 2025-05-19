@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@media (prefers-color-scheme: light) {
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
