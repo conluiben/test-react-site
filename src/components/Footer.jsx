@@ -36,7 +36,7 @@ const Footer = () => {
   return (
     <Section
       classNameOuter="!py-8 bg-slate-800"
-      classNameInner="flex flex-col gap-y-4 text-center lg:text-left text-white"
+      classNameInner="flex flex-col gap-y-4 text-center lg:text-left text-white lg:flex-row lg:justify-between"
     >
       <div className="flex flex-col gap-y-0">
         <h3 className="text-2xl font-[600]">Sign up for CoreData's Insights</h3>
@@ -52,7 +52,7 @@ const Footer = () => {
           className="bg-white text-black px-2 py-1"
         />
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col lg:-ml-64">
         {menuLinks.map((aLink, idx) => (
           <a href={aLink["link"]} key={idx}>
             {aLink["text"]}

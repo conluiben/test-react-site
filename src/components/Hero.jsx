@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <Section
       isFullHeight
-      classNameOuter="w-screen bg-gradient-to-b from-[#008edc] to-[#004c72]"
+      classNameOuter="relative w-screen bg-gradient-to-b from-[#008edc] to-[#004c72]"
       // classNameOuter="w-screen bg-[url(./src/assets/banners/banner1.jpg)] bg-no-repeat bg-cover bg-center lg:bg-contain lg:bg-top-right"
       classNameInner="text-center lg:text-left text-white"
     >
@@ -18,6 +18,25 @@ export default function Hero() {
           Turning Data Into Insights and Insights Into Action
         </p>
         <Button>Talk to our Team</Button>
+      </div>
+      {/* <div
+        className="z-0 absolute -top-[10vh] right-[10%] text-[89vh] font-black text-transparent bg-[url(./src/assets/banners/banner1-bg.jpg)] bg-cover bg-center bg-fixed bg-clip-text leading-none"
+        style={{
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+        }}
+      >
+        C
+      </div> */}
+      <div
+        className="absolute bottom-[0vh] right-[10%] text-[95vh] font-black text-transparent bg-[url(./src/assets/banners/banner1-bg.jpg)] bg-cover bg-center bg-fixed bg-clip-text leading-none"
+        style={{
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+          textBox: "trim-both cap alphabetic",
+        }}
+      >
+        C
       </div>
     </Section>
   );
