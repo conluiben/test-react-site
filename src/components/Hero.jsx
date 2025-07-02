@@ -8,7 +8,8 @@ export default function Hero() {
   return (
     <Section
       isFullHeight
-      classNameOuter="w-screen bg-[url(./src/assets/banners/banner1.jpg)] bg-no-repeat bg-cover bg-center lg:bg-contain lg:bg-top-right"
+      classNameOuter="w-screen bg-gradient-to-b from-[#008edc] to-[#004c72]"
+      // classNameOuter="w-screen bg-[url(./src/assets/banners/banner1.jpg)] bg-no-repeat bg-cover bg-center lg:bg-contain lg:bg-top-right"
       classNameInner="text-center lg:text-left text-white"
     >
       <div className="w-full lg:w-2/3">
