@@ -2,19 +2,22 @@ import Section from "./layout/Section";
 
 const Insights = () => {
   const sampleTopics = [
-    "Economic Data",
-    "Latest issues today",
-    "Market X Crash",
-    "PersonX",
-    "Independence Day",
-    "Stocks",
-    "Celebrity News",
-    "CBS Polls",
-    "Congress and Iran",
-    "Privacy",
-    "BLACKPINK",
-    "Trump job approval",
+    "Aged Care",
+    "Alternative Investments",
+    "Asset Management",
+    "Brand Tracking",
+    "Budgeting and Savings",
+    "Business Valuation",
+    "Credit Markets",
+    "Cryptocurrency",
+    "Customer Acquisition Strategy",
+    "Economic Indicators",
+    "Economic Policy",
+    "Family Office",
+    "Financial Advise",
+    "Financial Literacy",
   ];
+
   return (
     <Section
       classNameOuter="bg-slate-50"
