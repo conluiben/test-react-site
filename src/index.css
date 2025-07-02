@@ -1,9 +1,53 @@
+/* @import url("https://assets.coredataresearch.com/coredata.com.au/fonts/CalibriRegular.ttf"); */
 @import "tailwindcss";
 
-@media (prefers-color-scheme: light) {
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@font-face {
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-display: swap;
+  src: url("https://assets.coredataresearch.com/coredata.com.au/fonts/CalibriRegular.ttf")
+    format("truetype");
 }
 
 body {
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* font-family: "Calibri", sans-serif; */
+}
+
+* {
+  font-family: "Calibri", sans-serif !important;
+}
+
+.dotted {
+  /* reference for dotted background: https://www.reddit.com/r/nextjs/comments/18t0gay/dotted_background_on_my_web_application/ */
+  --dot-bg: #f4f4f4;
+  --dot-color: #bfbfbf;
+  --dot-size: 2px;
+  --dot-space: 60px;
+  background: linear-gradient(
+        90deg,
+        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+        transparent 1%
+      )
+      center / var(--dot-space) var(--dot-space),
+    linear-gradient(
+        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+        transparent 1%
+      )
+      center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
 }
