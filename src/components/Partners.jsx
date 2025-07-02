@@ -56,7 +56,7 @@ const Partners = () => {
   ];
   return (
     <Section
-      classNameOuter="bg-slate-100"
+      classNameOuter="bg-slate-200"
       classNameInner="text-center lg:text-left"
     >
       <h2 className="text-3xl/8 font-[600] mb-4">

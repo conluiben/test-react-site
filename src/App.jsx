@@ -8,6 +8,7 @@ import Partners from "./components/Partners";
 import CallToAction from "./components/CallToAction";
 import Footer from "./components/Footer";
 import JoinPanel from "./components/JoinPanel";
+import News from "./components/News";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Services />
       <JoinPanel />
       <CompanyNews />
+      <News />
       <Partners />
       <CallToAction />
       <Footer />
