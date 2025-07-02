@@ -4,7 +4,7 @@ import Timeline from "./Timeline";
 const Services = () => {
   return (
     <Section
-      classNameOuter="bg-slate-100"
+      classNameOuter="bg-slate-200"
       classNameInner="text-center lg:text-left"
     >
       <div className="mb-12">
@@ -30,8 +30,7 @@ const Services = () => {
       </div> */}
       <div className="flex justify-between gap-x-16">
         <Timeline className="flex-1" />
-        <div className="shrink flex flex-col whitespace-nowrap">
-          {/* <p className="sticky bottom-0">Menu goes here</p> */}
+        {/* <div className="shrink flex flex-col whitespace-nowrap">
           {[
             "Market Intelligence",
             "Business Intelligence",
@@ -48,7 +47,7 @@ const Services = () => {
               {aLink}
             </a>
           ))}
-        </div>
+        </div> */}
       </div>
     </Section>
   );

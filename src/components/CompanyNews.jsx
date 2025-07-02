@@ -1,5 +1,5 @@
 import Section from "./layout/Section";
-import sampleImage from "../assets/meeting-fauxels.jpg";
+import sampleImage from "../assets/teams.jpg";
 import Carousel from "./Carousel";
 
 const CompanyNews = () => {
@@ -55,12 +55,6 @@ const CompanyNews = () => {
         </p>
       </div>
       <div>
-        <div className="">
-          <h2 className="text-2xl/6.5 font-[600] mb-4">
-            From advisers to brokers, to banking and aged care, our research
-            covers different industries
-          </h2>
-        </div>
         <div className="news-feed flex flex-col gap-y-4">
           <Carousel>
             {teamList.map((aTeam, idx) => (

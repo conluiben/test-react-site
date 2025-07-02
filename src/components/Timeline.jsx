@@ -35,10 +35,15 @@ const Timeline = ({ className = "" }) => {
 
   return (
     <ul
-      className={`relative border-l border-gray-300 pl-10.5 list-none ml-8 ${className}`}
+      className={`relative border-l-2 border-[#E87722] pl-10.5 list-none ml-8 ${className}`}
     >
       {allServices.map((aService, index) => (
-        <li key={index} className="relative mb-16 min-h-[60vh]">
+        <li
+          key={index}
+          className={`relative ${
+            index < allServices.length - 1 && "mb-16 min-h-[10vh]"
+          } `}
+        >
           {/* Timeline Icon */}
           <span className="absolute -left-[70px] -top-[10px] bg-[#ccefff] text-[#0091DA] rounded-full w-auto p-4 flex items-center justify-center text-2xl">
             {aService.icon}

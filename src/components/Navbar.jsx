@@ -11,7 +11,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <div className="sticky top-0 flex items-stretch gap-x-0 h-[50px] bg-white z-10">
+      <div className="sticky top-0 flex items-stretch gap-x-0 h-[80px] bg-white z-10">
         <div className="flex items-center px-4 lg:hidden">
           <img src={iconHambuger} alt="Menu Icon" className="w-[20px]" />
         </div>
@@ -29,8 +29,10 @@ const Navbar = () => {
             ))}
           </div>
         </div>
-        <div className="flex items-center bg-[#E87722] px-4">
-          <button>JOIN US</button>
+        <div className="flex items-center bg-[#E87722] px-4 text-white">
+          <a href="https://poe-au.coredata.com.au" target="_blank">
+            JOIN US
+          </a>
         </div>
       </div>
       {/* mobile navbar */}
