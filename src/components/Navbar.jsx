@@ -46,7 +46,11 @@ const Navbar = () => {
           />
           <div className="hidden lg:flex items-center gap-x-6">
             {menuItems.map((aLink, idx) => (
-              <a href="#" key={idx}>
+              <a
+                href="#"
+                key={idx}
+                className={`${scrolled ? "text-black" : "text-white"}`}
+              >
                 {aLink}
               </a>
             ))}
