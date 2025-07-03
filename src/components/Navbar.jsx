@@ -51,7 +51,7 @@ const Navbar = () => {
             ))}
           </div>
         </div>
-        <div className="flex items-center bg-[#E87722] px-4 text-white">
+        <div className="flex items-center bg-[#008080] px-4 text-white text-xl 2xl:text-[2vh] rounded-xl">
           <a href="https://poe-au.coredata.com.au" target="_blank">
             JOIN US
           </a>

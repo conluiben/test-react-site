@@ -12,5 +12,5 @@ export default defineConfig({
   //     input: "src/entry-server.jsx",
   //   },
   // },
-  base: "/luiz/",
+  base: "/cd-site/",
 });
