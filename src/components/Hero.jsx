@@ -1,9 +1,8 @@
-// import heroImage from "../assets/meeting-fauxels.jpg"
-
 import Button from "./Button";
 import Carousel from "./Carousel";
 import Section from "./layout/Section";
 import Navbar from "./Navbar";
+import bannerBg from "../assets/banners/banner1-bg.jpg";
 
 export default function Hero() {
   return (
@@ -13,6 +12,7 @@ export default function Hero() {
       classNameOuter="w-full bg-[url(./src/assets/banners/banner1-bg.jpg)] bg-no-repeat bg-cover bg-center relative"
       // classNameOuter="w-screen bg-[url(./src/assets/banners/banner1-bg.jpg)] bg-no-repeat bg-cover bg-center lg:bg-contain lg:bg-top-right relative"
       classNameInner="text-center lg:text-left text-white"
+      backgroundImageSrc={bannerBg}
     >
       <div className="w-full lg:w-2/3 2xl:w-1/2 z-2 relative">
         <h1 className="text-5xl font-semibold mb-2 2xl:text-[7vh]">

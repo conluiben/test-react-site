@@ -32,7 +32,7 @@ const Insights = () => {
           placeholder="Explore our insights..."
           className="grow px-4 py-2 lg:px-6 lg:py-4 focus:outline-none"
         />
-        <button className="bg-[#E87722] px-3 py-2 lg:px-6 rounded-full text-white">
+        <button className="bg-[#E87722] px-3 py-2 lg:px-10 text-xl rounded-full text-white">
           Search
         </button>
       </div>

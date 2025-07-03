@@ -1,5 +1,5 @@
 import Section from "./layout/Section";
-import sampleImage from "../assets/meeting-fauxels.jpg";
+import sampleImage from "../assets/case-study.jpg";
 
 const News = () => {
   const articleList = [

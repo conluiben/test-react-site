@@ -1,5 +1,6 @@
 import iconHambuger from "../assets/icon-hamburger.svg";
 import cdLogoWhite from "../assets/cd-white.png";
+import cdLogoBlack from "../assets/cd-black.png";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -23,7 +24,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`fixed w-full top-0 flex items-stretch gap-x-0 h-[80px] z-10 duration-200 ${
+        className={`fixed w-full top-0 flex items-stretch gap-x-0 h-[80px] z-10 transition-colors duration-200 px-6 py-4 ${
           scrolled ? "bg-white" : "bg-transparent"
         }`}
       >
@@ -31,16 +32,10 @@ const Navbar = () => {
           <img src={iconHambuger} alt="Menu Icon" className="w-[20px]" />
         </div>
         <div
-          className={`grow flex items-center px-8 gap-x-16 ${
-            scrolled ? "bg-white" : "bg-transparent"
-          }`}
+          className={`grow flex items-center px-8 gap-x-16 transition-colors duration-200 bg-transparent`}
         >
           <img
-            src={
-              scrolled
-                ? "https://assets.coredataresearch.com/coredata.com.au/images/core-data-logo-retina.png"
-                : cdLogoWhite
-            }
+            src={scrolled ? cdLogoBlack : cdLogoWhite}
             alt="CoreData logo"
             className="max-h-[40px]"
           />
