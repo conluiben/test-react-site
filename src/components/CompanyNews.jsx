@@ -1,6 +1,7 @@
 import Section from "./layout/Section";
 import sampleImage from "../assets/teams.jpg";
 import Carousel from "./Carousel";
+import ImageSlider from "./ImageSlider";
 
 const CompanyNews = () => {
   const teamList = [

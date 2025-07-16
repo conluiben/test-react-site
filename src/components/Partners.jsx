@@ -1,5 +1,6 @@
 import Section from "./layout/Section";
-import Carousel from "./Carousel";
+import Carousel from "./CarouselMotion";
+import ImageSlider from "./ImageSlider";
 
 const Partners = () => {
   const listOfPartners = [
@@ -62,24 +63,15 @@ const Partners = () => {
       <h2 className="text-3xl/8 font-[600] mb-4">
         Join our partners who trusted us with their success
       </h2>
-      {/* <div className="flex flex-wrap items-center justify-center gap-y-0">
-        {listOfPartners.map((aPartner, idx) => (
-          <div className="w-1/2 max-w-[200px]" key={idx}>
-            <img src={aPartner["source"]} alt={aPartner["name"]} />
-          </div>
-        ))}
-      </div> */}
-      <Carousel autoSlide autoSlideInterval={3000}>
+      {/* replaced Carousel component with ImageSlider */}
+      <ImageSlider autoSlide autoSlideInterval={5000}>
         {listOfPartners.map((aPartner, idx) => (
           <div className="w-auto flex-shrink-0 object-cover" key={idx}>
-            <img
-              src={aPartner["source"]}
-              alt={aPartner["name"]}
-              className="w-48 h-48"
-            />
+            <img src={aPartner["source"]} alt={aPartner["name"]} className="" />
+            {/* w-48 h-48 */}
           </div>
         ))}
-      </Carousel>
+      </ImageSlider>
     </Section>
   );
 };
